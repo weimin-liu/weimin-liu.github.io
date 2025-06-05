@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weimin Liu - CV</title>
+    <title>Weimin Liu</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Google Fonts - Inter -->
@@ -44,6 +44,30 @@
         .contact-info a:hover {
             text-decoration: underline;
         }
+        /* Styles for collapsible content */
+        .collapsible-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+        }
+        .collapsible-content.expanded {
+            max-height: 1200px; /* Adjusted to fit the new content, increased from 800px */
+            transition: max-height 0.5s ease-in;
+        }
+        .read-more-button {
+            background-color: transparent;
+            color: #4f46e5;
+            border: none;
+            cursor: pointer;
+            font-weight: 600;
+            padding: 0.5rem 0;
+            display: block; /* Make it a block element to center if needed */
+            margin-top: 1rem;
+            text-align: left;
+        }
+        .read-more-button:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body class="antialiased p-4 sm:p-6 md:p-8">
@@ -53,7 +77,7 @@
         <header class="text-center mb-8 relative">
             <h1 class="text-4xl sm:text-5xl font-extrabold text-gray-900 mb-2">Weimin Liu</h1>
             <p class="text-xl sm:text-2xl font-medium text-indigo-700 mb-4">
-                Geochemist | Cheminformatician | Oceanographer
+                Geochemist | Cheminformatician
             </p>
             <div class="contact-info text-gray-600 text-sm sm:text-base flex flex-wrap justify-center gap-x-4 gap-y-2">
                 <p>Email: <a id="email-link" href="#" class="hover:underline">Click to reveal email</a></p>
@@ -71,6 +95,46 @@
             <p class="text-gray-700 leading-relaxed">
                 Interdisciplinary geochemist and data scientist using molecular fingerprints to trace (bio)geochemical processes in modern oceans, recent sediments, and ancient reservoirs. By applying targeted and untargeted cheminformatics, I transform complex geochemical data into new insights on Earth’s inner workings.
             </p>
+            <div id="research-interest-collapsible" class="collapsible-content">
+                <h3 class="font-semibold text-gray-800 mt-6 mb-2">Targets of My Study:</h3>
+                <p class="text-gray-700 leading-relaxed mb-2">
+                    I investigate a diverse range of biomarkers to reconstruct (bio)geochemical processes:
+                </p>
+                <ul class="list-disc ml-6 text-gray-700 space-y-1">
+                    <li>
+                        <strong>Intact polar lipids:</strong> Cellular building blocks used to trace microbial communities and their interactions with their environments.
+                    </li>
+                    <li>
+                        <strong>Monosaccharide anhydrides and polycyclic aromatic hydrocarbons:</strong> Wildfire-derived compounds employed to reconstruct past fire activities.
+                    </li>
+                    <li>
+                        <strong>Fatty acids and other polar compounds in biodegraded oils:</strong> Indicators used to determine the severity of biodegradation.
+                    </li>
+                    <li>
+                        <strong>Hydrocarbons (e.g., <i>n</i>-alkanes, steranes, hopanes):</strong> Applied to trace the source of crude oils and assess the extent of secondary alteration, including thermal alteration and biodegradation.
+                    </li>
+                </ul>
+                <p class="text-gray-700 leading-relaxed mt-4">
+                    My recent interest focuses on utilizing comprehensive molecular fingerprinting, encompassing multiple classes of biomarkers, to reconstruct relevant (bio)geochemical processes, often employing methods such as <strong>co-occurrence network analysis</strong>.
+                </p>
+
+                <h3 class="font-semibold text-gray-800 mt-6 mb-2">Analytical Techniques:</h3>
+                <p class="text-gray-700 leading-relaxed mb-2">
+                    In addition to standard techniques like GC, GC/MS, and LC/MS, I primarily focus on:
+                </p>
+                <ul class="list-disc ml-6 text-gray-700 space-y-1">
+                    <li>
+                        <strong>Mass Spectrometry Imaging (MSI):</strong> When applied to sediments, MSI achieves μm-scale spatial resolution in molecular composition changes, enabling high-temporal resolution reconstruction of paleoclimate in laminated sediments.
+                    </li>
+                    <li>
+                        <strong>Fourier Transform Ion Cyclotron Resonance Mass Spectrometry (FT-ICR MS):</strong> A powerful mass spectrometry technique providing exceptionally high mass resolution and accuracy for molecular measurements.
+                    </li>
+                </ul>
+                <p class="text-gray-700 leading-relaxed mt-4">
+                    By combining the high-temporal resolution and rich molecular features obtained from these advanced techniques with other contextual information, I aim to develop machine learning models capable of "predicting" past environmental events and conditions.
+                </p>
+            </div>
+            <button id="read-more-btn" class="read-more-button">Read More</button>
         </section>
 
         <!-- Research Experience Section -->
@@ -287,8 +351,22 @@
             emailLink.href = `mailto:${email}`;
 
             // Display the email with " at " and a different font for "at"
-            // Using a generic serif font for 'at' to make it visually distinct but still readable.
             emailLink.innerHTML = `${user}<span style="font-family: Georgia, serif; font-style: italic; margin: 0 0.2em;"> at </span>${domain}`;
+        });
+
+        // Collapsible Research Interest section
+        document.addEventListener('DOMContentLoaded', () => {
+            const collapsibleContent = document.getElementById('research-interest-collapsible');
+            const readMoreBtn = document.getElementById('read-more-btn');
+
+            readMoreBtn.addEventListener('click', () => {
+                collapsibleContent.classList.toggle('expanded');
+                if (collapsibleContent.classList.contains('expanded')) {
+                    readMoreBtn.textContent = 'Read Less';
+                } else {
+                    readMoreBtn.textContent = 'Read More';
+                }
+            });
         });
     </script>
 </body>
