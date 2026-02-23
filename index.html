@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,49 +12,73 @@
     <style>
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #f3f4f6; /* Light gray background */
-            color: #374151; /* Dark gray text */
+            background-color: #f3f4f6;
+            /* Light gray background */
+            color: #374151;
+            /* Dark gray text */
         }
+
         .container {
-            max-width: 960px; /* Max width for content */
+            max-width: 960px;
+            /* Max width for content */
         }
+
         /* Custom styles for better readability and spacing */
         section {
             margin-bottom: 2rem;
             padding: 1.5rem;
             background-color: #ffffff;
-            border-radius: 0.75rem; /* Rounded corners */
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); /* Subtle shadow */
+            border-radius: 0.75rem;
+            /* Rounded corners */
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            /* Subtle shadow */
         }
+
         h2 {
-            border-bottom: 2px solid #e5e7eb; /* Light gray border under headings */
+            border-bottom: 2px solid #e5e7eb;
+            /* Light gray border under headings */
             padding-bottom: 0.5rem;
             margin-bottom: 1.5rem;
         }
+
         ul {
             list-style-type: disc;
             margin-left: 1.25rem;
         }
+
         li {
             margin-bottom: 0.5rem;
         }
+
+        .ref-label {
+            color: #6b7280;
+            font-weight: 500;
+            font-size: 0.9em;
+        }
+
         .contact-info a {
-            color: #4f46e5; /* Indigo for links */
+            color: #4f46e5;
+            /* Indigo for links */
             text-decoration: none;
         }
+
         .contact-info a:hover {
             text-decoration: underline;
         }
+
         /* Styles for collapsible content */
         .collapsible-content {
             max-height: 0;
             overflow: hidden;
             transition: max-height 0.3s ease-out;
         }
+
         .collapsible-content.expanded {
-            max-height: 1200px; /* Adjusted to fit the new content, increased from 800px */
+            max-height: 1200px;
+            /* Adjusted to fit the new content, increased from 800px */
             transition: max-height 0.5s ease-in;
         }
+
         .read-more-button {
             background-color: transparent;
             color: #4f46e5;
@@ -61,15 +86,18 @@
             cursor: pointer;
             font-weight: 600;
             padding: 0.5rem 0;
-            display: block; /* Make it a block element to center if needed */
+            display: block;
+            /* Make it a block element to center if needed */
             margin-top: 1rem;
             text-align: left;
         }
+
         .read-more-button:hover {
             text-decoration: underline;
         }
     </style>
 </head>
+
 <body class="antialiased p-4 sm:p-6 md:p-8">
     <div class="container mx-auto bg-gray-100 rounded-xl shadow-lg p-6 sm:p-8 md:p-10">
 
@@ -81,9 +109,12 @@
             </p>
             <div class="contact-info text-gray-600 text-sm sm:text-base flex flex-wrap justify-center gap-x-4 gap-y-2">
                 <p>Email: <a id="email-link" href="#" class="hover:underline">Click to reveal email</a></p>
-                <p>GitHub: <a href="https://github.com/weimin-liu" target="_blank" rel="noopener noreferrer" class="hover:underline">github.com/weimin-liu</a></p>
-                <p>ORCID: <a href="https://orcid.org/0000-0001-7843-5766" target="_blank" rel="noopener noreferrer" class="hover:underline">orcid.org/0000-0001-7843-5766</a></p>
-                <p>Google Scholar: <a href="https://scholar.google.com/citations?user=suRnYr0AAAAJ&hl=en" target="_blank" rel="noopener noreferrer" class="hover:underline">Google Scholar Profile</a></p>
+                <p>GitHub: <a href="https://github.com/weimin-liu" target="_blank" rel="noopener noreferrer"
+                        class="hover:underline">github.com/weimin-liu</a></p>
+                <p>ORCID: <a href="https://orcid.org/0000-0001-7843-5766" target="_blank" rel="noopener noreferrer"
+                        class="hover:underline">orcid.org/0000-0001-7843-5766</a></p>
+                <p>Google Scholar: <a href="https://scholar.google.com/citations?user=suRnYr0AAAAJ&hl=en"
+                        target="_blank" rel="noopener noreferrer" class="hover:underline">Google Scholar Profile</a></p>
             </div>
         </header>
 
@@ -93,7 +124,10 @@
                 Summary
             </h2>
             <p class="text-gray-700 leading-relaxed">
-                Interdisciplinary geochemist and data scientist using molecular fingerprints to trace (bio)geochemical processes in modern oceans, recent sediments, and ancient reservoirs. By applying targeted and untargeted cheminformatics, I transform complex geochemical data into new insights on Earth’s inner workings.
+                Interdisciplinary geochemist and data scientist using molecular fingerprints to trace (bio)geochemical
+                processes in modern oceans, recent sediments, and ancient reservoirs. By applying targeted and
+                untargeted cheminformatics, I transform complex geochemical data into new insights on Earth’s inner
+                workings.
             </p>
             <div id="research-interest-collapsible" class="collapsible-content">
                 <h3 class="font-semibold text-gray-800 mt-6 mb-2">Targets of My Study:</h3>
@@ -102,20 +136,27 @@
                 </p>
                 <ul class="list-disc ml-6 text-gray-700 space-y-1">
                     <li>
-                        <strong>Intact polar lipids:</strong> Cellular building blocks used to trace microbial communities and their interactions with their environments.
+                        <strong>Intact polar lipids:</strong> Cellular building blocks used to trace microbial
+                        communities and their interactions with their environments.
                     </li>
                     <li>
-                        <strong>Monosaccharide anhydrides and polycyclic aromatic hydrocarbons:</strong> Wildfire-derived compounds employed to reconstruct past fire activities.
+                        <strong>Monosaccharide anhydrides and polycyclic aromatic hydrocarbons:</strong>
+                        Wildfire-derived compounds employed to reconstruct past fire activities.
                     </li>
                     <li>
-                        <strong>Fatty acids and other polar compounds in biodegraded oils:</strong> Indicators used to determine the severity of biodegradation.
+                        <strong>Fatty acids and other polar compounds in biodegraded oils:</strong> Indicators used to
+                        determine the severity of biodegradation.
                     </li>
                     <li>
-                        <strong>Hydrocarbons (e.g., <i>n</i>-alkanes, steranes, hopanes):</strong> Applied to trace the source of crude oils and assess the extent of secondary alteration, including thermal alteration and biodegradation.
+                        <strong>Hydrocarbons (e.g., <i>n</i>-alkanes, steranes, hopanes):</strong> Applied to trace the
+                        source of crude oils and assess the extent of secondary alteration, including thermal alteration
+                        and biodegradation.
                     </li>
                 </ul>
                 <p class="text-gray-700 leading-relaxed mt-4">
-                    My recent interest focuses on utilizing comprehensive molecular fingerprinting, encompassing multiple classes of biomarkers, to reconstruct relevant (bio)geochemical processes, often employing methods such as <strong>co-occurrence network analysis</strong>.
+                    My recent interest focuses on utilizing comprehensive molecular fingerprinting, encompassing
+                    multiple classes of biomarkers, to reconstruct relevant (bio)geochemical processes, often employing
+                    methods such as <strong>co-occurrence network analysis</strong>.
                 </p>
 
                 <h3 class="font-semibold text-gray-800 mt-6 mb-2">Analytical Techniques:</h3>
@@ -124,14 +165,20 @@
                 </p>
                 <ul class="list-disc ml-6 text-gray-700 space-y-1">
                     <li>
-                        <strong>Mass Spectrometry Imaging (MSI):</strong> When applied to sediments, MSI achieves μm-scale spatial resolution in molecular composition changes, enabling high-temporal resolution reconstruction of paleoclimate in laminated sediments.
+                        <strong>Mass Spectrometry Imaging (MSI):</strong> When applied to sediments, MSI achieves
+                        μm-scale spatial resolution in molecular composition changes, enabling high-temporal resolution
+                        reconstruction of paleoclimate in laminated sediments.
                     </li>
                     <li>
-                        <strong>Fourier Transform Ion Cyclotron Resonance Mass Spectrometry (FT-ICR MS):</strong> A powerful mass spectrometry technique providing exceptionally high mass resolution and accuracy for molecular measurements.
+                        <strong>Fourier Transform Ion Cyclotron Resonance Mass Spectrometry (FT-ICR MS):</strong> A
+                        powerful mass spectrometry technique providing exceptionally high mass resolution and accuracy
+                        for molecular measurements.
                     </li>
                 </ul>
                 <p class="text-gray-700 leading-relaxed mt-4">
-                    By combining the high-temporal resolution and rich molecular features obtained from these advanced techniques with other contextual information, I aim to develop machine learning models capable of "predicting" past environmental events and conditions.
+                    By combining the high-temporal resolution and rich molecular features obtained from these advanced
+                    techniques with other contextual information, I aim to develop machine learning models capable of
+                    "predicting" past environmental events and conditions.
                 </p>
             </div>
             <button id="read-more-btn" class="read-more-button">Read More</button>
@@ -154,10 +201,12 @@
                 </p>
                 <ul class="list-disc ml-6 mt-2 text-gray-700">
                     <li>
-                        Contributed to establishing Cheminformatics expertise within the Cluster of Excellence “The Ocean Floor – Earth's Uncharted Interface”.
+                        Contributed to establishing Cheminformatics expertise within the Cluster of Excellence “The
+                        Ocean Floor – Earth's Uncharted Interface”.
                     </li>
                     <li>
-                        Developed user-friendly software for streamlined analysis of mass spectrometry imaging data from sediments.
+                        Developed user-friendly software for streamlined analysis of mass spectrometry imaging data from
+                        sediments.
                     </li>
                 </ul>
             </div>
@@ -199,88 +248,125 @@
             </h2>
             <ul class="list-disc ml-6 text-gray-700">
                 <li>
-                  <strong class="text-lg text-gray-900">
-                      Untargeted Organic Molecular Analysis
-                  </strong>
-                  <ul class="list-disc ml-6 mt-2 space-y-2">
-                <li>
-                    Intact polar lipids in the oceans: <br>
-                    <strong>W Liu</strong>, HC Holm, JS Lipp, HF Fredricks, BAS Van Mooy, KU Hinrichs (2025). Unraveling plankton adaptation in global oceans through the untargeted analysis of lipidomes.
-                    <em>Science Advances 11</em> (21), eads4605. <a href="https://doi.org/10.1126/sciadv.ads4605" target="_blank" rel="noopener noreferrer" class="text-indigo-600 hover:underline">DOI: 10.1126/sciadv.ads4605</a>
-                </li>
-                <li>
-                    Mass spectrometry imaging of sediments: <br>
-                    <strong>W Liu</strong>, S Alfken, L Wörmer, JS Lipp, KU Hinrichs (2022). Hidden molecular clues in marine sediments revealed by untargeted mass spectrometry imaging.
-                    <em>Frontiers in Earth Science 10</em>, 931157. <a href="https://doi.org/10.3389/feart.2022.931157" target="_blank" rel="noopener noreferrer" class="text-indigo-600 hover:underline">DOI: 10.3389/feart.2022.931157</a>
-                </li>
-            </ul>
-        </li>
-                <li>
-                    <strong class="text-lg text-gray-900">
-                        Transformation of Fossil Polar Molecules
-                    </strong>
+                    <strong class="text-lg text-gray-900">Untargeted Organic Molecular Analysis</strong>
                     <ul class="list-disc ml-6 mt-2 space-y-2">
-                                            <li>
-                    Diagenesis of polar organic sulfur compounds: <br>
-                     <strong>W Liu</strong>, Y Liao, Q Shi, CS Hsu, B Jiang, P Peng (2018). Origin of polar organic sulfur compounds in immature crude oils revealed by ESI FT-ICR MS.
-                    <em>Organic Geochemistry 121</em>, 36-47. <a href="https://doi.org/10.1016/j.orggeochem.2018.04.003" target="_blank" rel="noopener noreferrer" class="text-indigo-600 hover:underline">DOI: 10.1016/j.orggeochem.2018.04.003</a>
+                        <li>
+                            <span class="ref-label">Intact polar lipids in the oceans:</span><br>
+                            <strong>W Liu</strong>, HC Holm, JS Lipp, HF Fredricks, BAS Van Mooy, KU Hinrichs (2025).
+                            Unraveling plankton adaptation in global oceans through the untargeted analysis of
+                            lipidomes.
+                            <em>Science Advances 11</em> (21), eads4605.
+                            <a href="https://doi.org/10.1126/sciadv.ads4605" target="_blank" rel="noopener noreferrer"
+                                class="text-indigo-600 hover:underline">DOI: 10.1126/sciadv.ads4605</a>
                         </li>
-                    <li>
-                    Biodegradation of polar crude oil fractions: <br>
-                     <strong>W Liu</strong>, Y Liao, Y Pan, B Jiang, Q Zeng, Q Shi, CS Hsu (2018). Use of ESI FT–ICR MS to investigate molecular transformation in simulated aerobic biodegradation of a sulfur-rich crude oil.
-                    <em>Organic Geochemistry 123</em>, 17-26. <a href="https://doi.org/10.1016/j.orggeochem.2018.06.003" target="_blank" rel="noopener noreferrer" class="text-indigo-600 hover:underline">DOI: 10.1016/j.orggeochem.2018.06.003</a>
-                    <br>
-
-                    B Jiang, <strong>W Liu</strong>, Y Liao, P Peng (2024). Molecular transformations of heteroatomic organic compounds in crude oils caused by biodegradation and subsequent thermal maturation: Insights from ESI FT-ICR MS.
-                    <em>Organic Geochemistry 188</em>, 104741. <a href="https://doi.org/10.1016/j.orggeochem.2024.104741" target="_blank" rel="noopener noreferrer" class="text-indigo-600 hover:underline">DOI: 10.1016/j.orggeochem.2024.104741</a>
+                        <li>
+                            <span class="ref-label">Mass spectrometry imaging of sediments:</span><br>
+                            <strong>W Liu</strong>, S Alfken, L Wörmer, JS Lipp, KU Hinrichs (2022). Hidden molecular
+                            clues in marine sediments revealed by untargeted mass spectrometry imaging.
+                            <em>Frontiers in Earth Science 10</em>, 931157.
+                            <a href="https://doi.org/10.3389/feart.2022.931157" target="_blank"
+                                rel="noopener noreferrer" class="text-indigo-600 hover:underline">DOI:
+                                10.3389/feart.2022.931157</a>
+                        </li>
+                        <li>
+                            <span class="ref-label">Mass spectrometry imaging tutorial:</span><br>
+                            Y Zander, <strong>W Liu</strong>, J Viola, J Altun, J Groninga, B Nettersheim, M-S Kapiri, I
+                            Obreht, L Wörmer (2026). Mass spectrometry imaging in the earth sciences—A tutorial to the
+                            micrometer-scale mapping of molecular fossils via MALDI FT-ICR MS.
+                            <em>Analytica Chimica Acta</em>, 345142.
+                        </li>
+                        <li>
+                            <span class="ref-label">Microbial stratification in hydrothermal sediments:</span><br>
+                            J Groninga, <strong>W Liu</strong>, L Wörmer, J Altun, A Teske, KU Hinrichs (2026).
+                            Millimetre‐scale stratification of microbial communities in hydrothermal sediments.
+                            <em>Environmental Microbiology 28</em> (1), e70227.
                         </li>
                     </ul>
-
                 </li>
-
-                    <li>
-                    <strong class="text-lg text-gray-900">
-                        Impact of Complex Alterations in Oil Reservoirs
-                    </strong>
+                <li>
+                    <strong class="text-lg text-gray-900">Transformation of Fossil Polar Molecules</strong>
                     <ul class="list-disc ml-6 mt-2 space-y-2">
-
-                    <li>
-                    Conventional biomarkers: <br>
-                     <strong>W Liu</strong>, Y Liao, C Jiang, Y Pan, Y Huang, X Wang, Y Wang, P Peng (2022). Superimposed secondary alteration of oil reservoirs. Part II: The characteristics of biomarkers under the superimposed influences of biodegradation and thermal alteration.
-                    <em>Fuel 307</em>, 121721. <a href="https://doi.org/10.1016/j.fuel.2021.121721" target="_blank" rel="noopener noreferrer" class="text-indigo-600 hover:underline">DOI: 10.1016/j.fuel.2021.121721</a>
-                </li>
-                                        <li>
-                    Gas generation potential: <br>
-                    Y Liao, <strong>W Liu</strong>, Y Pan, X Wang, Y Wang, P Peng (2020). Superimposed secondary alteration of oil reservoirs. Part I: Influence of biodegradation on the gas generation behavior of crude oils.
-                    <em>Organic Geochemistry 142</em>, 103965. <a href="https://doi.org/10.1016/j.orggeochem.2019.103965" target="_blank" rel="noopener noreferrer" class="text-indigo-600 hover:underline">DOI: 10.1016/j.orggeochem.2019.103965</a>
-                </li>
-
-
+                        <li>
+                            <span class="ref-label">Diagenesis of polar organic sulfur compounds:</span><br>
+                            <strong>W Liu</strong>, Y Liao, Q Shi, CS Hsu, B Jiang, P Peng (2018). Origin of polar
+                            organic sulfur compounds in immature crude oils revealed by ESI FT-ICR MS.
+                            <em>Organic Geochemistry 121</em>, 36-47.
+                            <a href="https://doi.org/10.1016/j.orggeochem.2018.04.003" target="_blank"
+                                rel="noopener noreferrer" class="text-indigo-600 hover:underline">DOI:
+                                10.1016/j.orggeochem.2018.04.003</a>
+                        </li>
+                        <li>
+                            <span class="ref-label">Biodegradation of polar crude oil fractions:</span><br>
+                            <strong>W Liu</strong>, Y Liao, Y Pan, B Jiang, Q Zeng, Q Shi, CS Hsu (2018). Use of ESI
+                            FT–ICR MS to investigate molecular transformation in simulated aerobic biodegradation of a
+                            sulfur-rich crude oil.
+                            <em>Organic Geochemistry 123</em>, 17-26.
+                            <a href="https://doi.org/10.1016/j.orggeochem.2018.06.003" target="_blank"
+                                rel="noopener noreferrer" class="text-indigo-600 hover:underline">DOI:
+                                10.1016/j.orggeochem.2018.06.003</a>
+                        </li>
+                        <li>
+                            <span class="ref-label">Molecular transformations in biodegraded crude oils:</span><br>
+                            B Jiang, <strong>W Liu</strong>, Y Liao, P Peng (2024). Molecular transformations of
+                            heteroatomic organic compounds in crude oils caused by biodegradation and subsequent thermal
+                            maturation: Insights from ESI FT-ICR MS.
+                            <em>Organic Geochemistry 188</em>, 104741.
+                            <a href="https://doi.org/10.1016/j.orggeochem.2024.104741" target="_blank"
+                                rel="noopener noreferrer" class="text-indigo-600 hover:underline">DOI:
+                                10.1016/j.orggeochem.2024.104741</a>
+                        </li>
                     </ul>
-
+                </li>
+                <li>
+                    <strong class="text-lg text-gray-900">Impact of Complex Alterations in Oil Reservoirs</strong>
+                    <ul class="list-disc ml-6 mt-2 space-y-2">
+                        <li>
+                            <span class="ref-label">Conventional biomarkers:</span><br>
+                            <strong>W Liu</strong>, Y Liao, C Jiang, Y Pan, Y Huang, X Wang, Y Wang, P Peng (2022).
+                            Superimposed secondary alteration of oil reservoirs. Part II: The characteristics of
+                            biomarkers under the superimposed influences of biodegradation and thermal alteration.
+                            <em>Fuel 307</em>, 121721.
+                            <a href="https://doi.org/10.1016/j.fuel.2021.121721" target="_blank"
+                                rel="noopener noreferrer" class="text-indigo-600 hover:underline">DOI:
+                                10.1016/j.fuel.2021.121721</a>
+                        </li>
+                        <li>
+                            <span class="ref-label">Gas generation potential:</span><br>
+                            Y Liao, <strong>W Liu</strong>, Y Pan, X Wang, Y Wang, P Peng (2020). Superimposed secondary
+                            alteration of oil reservoirs. Part I: Influence of biodegradation on the gas generation
+                            behavior of crude oils.
+                            <em>Organic Geochemistry 142</em>, 103965.
+                            <a href="https://doi.org/10.1016/j.orggeochem.2019.103965" target="_blank"
+                                rel="noopener noreferrer" class="text-indigo-600 hover:underline">DOI:
+                                10.1016/j.orggeochem.2019.103965</a>
+                        </li>
+                    </ul>
                 </li>
             </ul>
         </section>
 
-        <!-- Softwares Section -->
+        <!-- Software Section -->
         <section>
             <h2 class="text-2xl sm:text-3xl font-semibold text-gray-800 mb-4">
-                Softwares
+                Software
             </h2>
-             <ul class="list-disc ml-6 mt-2 space-y-2">
-            <li>
-                <a href="https://github.com/weimin-liu/msiAlign" target="_blank" rel="noopener noreferrer" class="text-indigo-600 hover:underline">msiAlign</a>:
-                GUI software to process data from sedimentary mass spectrometry imaging data.
-            </li>
-            <li>
-                <a href="https://github.com/weimin-liu/msi_feature_extraction" target="_blank" rel="noopener noreferrer" class="text-indigo-600 hover:underline">msi_feature_extraction</a>:
-                A tool for the untargeted analysis of sedimentary mass spectrometry imaging data.
-            </li>
-            <li>
-                <a href="https://github.com/weimin-liu/polaris" target="_blank" rel="noopener noreferrer" class="text-indigo-600 hover:underline">polaris</a>:
-                A GUI application to process data from FT-ICR MS.
-            </li>
-        </ul>
+            <ul class="list-disc ml-6 mt-2 space-y-2">
+                <li>
+                    <a href="https://github.com/weimin-liu/msiAlign" target="_blank" rel="noopener noreferrer"
+                        class="text-indigo-600 hover:underline">msiAlign</a>:
+                    GUI software to process data from sedimentary mass spectrometry imaging data.
+                </li>
+                <li>
+                    <a href="https://github.com/weimin-liu/msi_feature_extraction" target="_blank"
+                        rel="noopener noreferrer" class="text-indigo-600 hover:underline">msi_feature_extraction</a>:
+                    A tool for the untargeted analysis of sedimentary mass spectrometry imaging data.
+                </li>
+                <li>
+                    <a href="https://github.com/weimin-liu/polaris" target="_blank" rel="noopener noreferrer"
+                        class="text-indigo-600 hover:underline">polaris</a>:
+                    A GUI application to process data from FT-ICR MS.
+                </li>
+            </ul>
 
         </section>
 
@@ -370,4 +456,5 @@
         });
     </script>
 </body>
+
 </html>
